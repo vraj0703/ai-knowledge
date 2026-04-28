@@ -1,0 +1,22 @@
+[capability]
+id          = "21st"
+name        = "Discover community-made UI components | 21st.dev"
+url         = "https://21st.dev/community/components"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "UI Components"
+description = "Community UI components — fetchable component code"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/21st.js"
+
+[consumers]
+ministers   = ["design", "external-affairs"]
+sherpas    = []
+mr_v       = false
+pm         = false

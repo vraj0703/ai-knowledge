@@ -1,0 +1,26 @@
+[capability]
+id          = "exchange-rate"
+name        = "ExchangeRate API — Currency Rates"
+url         = "https://open.er-api.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Free currency exchange rates, 150+ currencies, no auth"
+
+[integration]
+method      = "api"
+api_docs    = "https://open.er-api.com/v6/latest/USD"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/exchange-rate.js"
+
+[consumers]
+ministers   = ["resources"]
+sherpas    = []
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:27.198Z"

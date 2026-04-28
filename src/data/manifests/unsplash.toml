@@ -1,0 +1,26 @@
+[capability]
+id          = "unsplash"
+name        = "Welcome Pictures | Unsplash"
+url         = "https://unsplash.com/search/photos/welcome"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Free stock photo API — 3M+ images, no attribution required"
+
+[integration]
+method      = "api"
+api_docs    = "https://unsplash.com/developers"
+auth_type   = "api-key"
+auth_env    = "UNSPLASH_ACCESS_KEY"
+adapter     = "adapters/unsplash.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:45:45.258Z"

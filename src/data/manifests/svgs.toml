@@ -1,0 +1,22 @@
+[capability]
+id          = "svgs"
+name        = "SVGs.app - AI SVG Generator | Create Vector Graphics in Seconds"
+url         = "https://svgs.app/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "AI SVG generator — fetchable vector graphics"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/svgs.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

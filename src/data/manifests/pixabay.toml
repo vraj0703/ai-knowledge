@@ -1,0 +1,26 @@
+[capability]
+id          = "pixabay"
+name        = "Pixabay — Free Images & Videos"
+url         = "https://pixabay.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Free stock images, illustrations, vectors, and videos API"
+
+[integration]
+method      = "api"
+api_docs    = "https://pixabay.com/api/docs/"
+auth_type   = "api-key"
+auth_env    = "PIXABAY_API_KEY"
+adapter     = "adapters/pixabay.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T18:52:10.662Z"

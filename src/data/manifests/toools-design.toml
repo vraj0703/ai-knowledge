@@ -1,0 +1,22 @@
+[capability]
+id          = "toools-design"
+name        = "Finder"
+url         = "https://www.toools.design/finder"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "AI Tool Directories"
+description = "Design tool finder — scrapable tool listings"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/toools-design.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

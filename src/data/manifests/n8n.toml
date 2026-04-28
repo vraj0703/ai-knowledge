@@ -1,0 +1,35 @@
+[capability]
+id          = "n8n"
+name        = "n8n — Visual Workflow Automation"
+url         = "https://n8n.io/"
+tier        = "T2-Local"
+status      = "parked"
+free        = true
+category    = "Workflow Automation"
+description = "Self-hosted visual workflow engine. ~400 pre-built integration nodes for SaaS services. Cron, webhook, HTTP, code nodes."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "low-for-current-needs"
+license       = "Fair-code (Sustainable Use License — restricted, NOT true OSS)"
+github_stars  = 50000
+language      = "TypeScript / Node.js"
+backend       = "Node.js + SQLite/Postgres"
+visual_editor = true
+ollama_native = "via community node"
+decision      = "Park. Not adopted."
+reasoning     = "Three blockers: (1) collides with cortex — n8n is also an orchestrator with cron + retry policies + workflow execution. Adding it means having TWO orchestrators in the system, which is the worst architectural smell from this morning's audit. (2) Fair-code license is restrictive (no resale as service), creates real lock-in vs MIT alternatives. (3) For sherpa implementation specifically, Langflow is strictly better — Langflow is purpose-built for LLM pipelines, n8n's LLM nodes are an afterthought. n8n's strength is breadth of SaaS integrations (Slack, Stripe, Notion, etc.) which we don't currently need at quantity."
+compared_to   = ["langflow", "node-red", "activepieces", "crewai"]
+revisit_when  = "we want general SaaS integration (Slack, Stripe, Notion) at quantity AND have decided cortex is too heavy for that role"
+not_for       = "Anything that overlaps with cortex's orchestration role"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

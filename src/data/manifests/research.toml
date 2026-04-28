@@ -1,0 +1,27 @@
+[capability]
+id          = "research-gateway"
+name        = "Autonomous Research Agent"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Research"
+description = "Python-powered research in Kali WSL. Job scanning, topic research, competitor analysis, news monitoring, structured scraping via BS4+pandas."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/research.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = ["sherpa-crawler"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

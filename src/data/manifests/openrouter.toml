@@ -1,0 +1,22 @@
+[capability]
+id          = "openrouter"
+name        = "OpenRouter — Multi-Model LLM Gateway"
+url         = "https://openrouter.ai"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "AI Tools"
+description = "Unified API for GPT-4o, Claude, Gemini, Llama — free models available"
+
+[integration]
+method      = "api"
+api_docs    = "https://openrouter.ai/docs"
+auth_type   = "api-key"
+auth_env    = "OPENROUTER_API_KEY"
+adapter     = "adapters/openrouter.js"
+
+[consumers]
+ministers   = ["planning", "review", "external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false

@@ -1,0 +1,26 @@
+[capability]
+id          = "roadmap-sh"
+name        = "AI Engineer Roadmap"
+url         = "https://roadmap.sh/ai-engineer"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Learning Platforms"
+description = "Developer roadmaps — fetchable learning paths as structured data"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/roadmap-sh.js"
+
+[consumers]
+ministers   = ["planning"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:34:52.072Z"

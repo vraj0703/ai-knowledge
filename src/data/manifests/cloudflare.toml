@@ -1,0 +1,27 @@
+[capability]
+id          = "cloudflare-gateway"
+name        = "Cloudflare Domain Management"
+url         = ""
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Infrastructure"
+description = "DNS records, email routing (alias@vishalraj.space), SSL status, cache purge, analytics for vishalraj.space"
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "bearer"
+auth_env    = "cloudflare_email"
+adapter     = ""
+gateway     = "gateway/cloudflare.cjs"
+
+[consumers]
+ministers   = ["minister-external-affairs"]
+sherpas    = ["sherpa-security"]
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 0
+last_used  = ""

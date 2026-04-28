@@ -1,0 +1,22 @@
+[capability]
+id          = "textures"
+name        = "Textures.com - 3D textures"
+url         = "https://www.textures.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "3D textures library — downloadable assets"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/textures.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

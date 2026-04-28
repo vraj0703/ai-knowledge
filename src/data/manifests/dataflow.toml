@@ -1,0 +1,27 @@
+[capability]
+id          = "dataflow"
+name        = "Data Pipeline Processor"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Data Processing"
+description = "Python pandas + jq data processing in Kali WSL. CSV analysis, JSON transformation, API fetching, dataset merging, aggregation, format conversion."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/dataflow.cjs"
+
+[consumers]
+ministers   = ["minister-resources"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

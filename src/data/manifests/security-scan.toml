@@ -1,0 +1,27 @@
+[capability]
+id          = "security-scan"
+name        = "Infrastructure Security Scanner"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Security"
+description = "Comprehensive security scanning via Kali — port scan (nmap), SSL audit (testssl), web vuln (nikto), DNS enum, security header analysis. Own infra only."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/security-scan.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = ["sherpa-security"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

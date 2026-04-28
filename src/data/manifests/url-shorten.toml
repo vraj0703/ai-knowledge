@@ -1,0 +1,26 @@
+[capability]
+id          = "url-shorten"
+name        = "is.gd — URL Shortener"
+url         = "https://is.gd"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Web Utilities"
+description = "Free URL shortener API, no auth required"
+
+[integration]
+method      = "api"
+api_docs    = "https://is.gd/developers.php"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/url-shorten.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:38.106Z"

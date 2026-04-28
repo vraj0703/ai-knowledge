@@ -1,0 +1,26 @@
+[capability]
+id          = "ocr-space"
+name        = "OCR.space — Image/PDF to Text"
+url         = "https://ocr.space"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "OCR — extract text from images and PDFs, 500 req/day free"
+
+[integration]
+method      = "api"
+api_docs    = "https://ocr.space/OCRAPI"
+auth_type   = "api-key"
+auth_env    = "OCR_SPACE_API_KEY"
+adapter     = "adapters/ocr-space.js"
+
+[consumers]
+ministers   = ["review"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 2
+last_used  = "2026-03-23T20:04:00.287Z"

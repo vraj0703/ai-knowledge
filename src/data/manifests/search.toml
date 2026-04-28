@@ -1,0 +1,27 @@
+[capability]
+id          = "search-gateway"
+name        = "Web Search + Scrape Gateway"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Research"
+description = "Exa semantic search + Puppeteer scraping combined. query, scrape, research commands."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/search.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = ["sherpa-crawler"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

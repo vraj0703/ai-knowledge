@@ -1,0 +1,26 @@
+[capability]
+id          = "geojs"
+name        = "GeoJS — IP Geolocation"
+url         = "https://www.geojs.io"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "IP geolocation — country, city, timezone, coordinates, no auth"
+
+[integration]
+method      = "api"
+api_docs    = "https://www.geojs.io/docs/v1/endpoints/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/geojs.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

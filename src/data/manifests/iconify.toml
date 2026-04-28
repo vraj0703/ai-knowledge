@@ -1,0 +1,26 @@
+[capability]
+id          = "iconify"
+name        = "Iconify Icon Search"
+url         = "https://iconify.design"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Design and Assets"
+description = "Open source icon search across 200k+ icons, SVG delivery, no auth. Replaces Flaticon + Icons8."
+
+[integration]
+method      = "api"
+api_docs    = "https://iconify.design/docs/api/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/iconify.js"
+
+[consumers]
+ministers   = ["minister-design"]
+sherpas    = ["sherpa-design"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-26T16:23:35.676Z"

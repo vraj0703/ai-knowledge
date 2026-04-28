@@ -1,0 +1,26 @@
+[capability]
+id          = "pub"
+name        = "firebase_crashlytics"
+url         = "https://pub.dev/packages/firebase_crashlytics"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Dev — Flutter"
+description = "Flutter package registry API — search, metadata, versions"
+
+[integration]
+method      = "api"
+api_docs    = "https://pub.dev/help/api"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/pub.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 2
+last_used  = "2026-03-23T17:27:49.509Z"

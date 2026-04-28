@@ -1,0 +1,26 @@
+[capability]
+id          = "namechk"
+name        = "Namechk - username availability"
+url         = "https://namechk.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "APIs and Web Services"
+description = "Username availability checker across platforms"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/namechk.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:34:51.645Z"

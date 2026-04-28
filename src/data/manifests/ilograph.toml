@@ -1,0 +1,31 @@
+[capability]
+id          = "ilograph"
+name        = "Ilograph — Interactive Architecture Diagrams"
+url         = "https://www.ilograph.com/"
+tier        = "T3-SaaS"
+status      = "rejected"
+free        = "trial only, paid otherwise"
+category    = "Diagram Rendering"
+description = "Diagrams-as-code with multi-perspective support. YAML-ish format. Cloud (app.ilograph.com) + self-hosted desktop. Confluence integration. Killer feature: multiple perspectives over the same resource model."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "rejected-after-comparison"
+license       = "Proprietary (free trial)"
+visual_editor = true
+decision      = "Rejected in favor of Graphviz + diagrams (mingrammer). Initially recommended this morning, then changed mind after realizing the source of truth shouldn't be the diagram file itself."
+reasoning     = "Initial appeal: native multi-perspective feature was unique. Reversal logic: once you accept that the diagram should be a PROJECTION of structured sources (registry.toml, CONSTITUTION.toml, etc.) and not a hand-maintained file, the multi-perspective feature collapses to 'call the generator with a different filter.' At that point an open-source renderer wins on every dimension: MIT license, no vendor risk, lives inside our system (dashboard /architecture.html), fits existing Python stack, free."
+compared_to   = ["graphviz", "diagrams-mingrammer", "d2", "structurizr", "mermaid"]
+revisit_when  = "we abandon the auto-generation approach AND want hand-curated polished diagrams AND have budget for vendor tooling (unlikely)"
+not_for       = "Auto-generated architecture projections from structured sources"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

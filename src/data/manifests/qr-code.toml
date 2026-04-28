@@ -1,0 +1,26 @@
+[capability]
+id          = "qr-code"
+name        = "QR Server — QR Code Generator"
+url         = "https://goqr.me/api"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Web Utilities"
+description = "Generate QR codes from text/URLs, no auth required"
+
+[integration]
+method      = "api"
+api_docs    = "https://goqr.me/api/doc/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/qr-code.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:28.513Z"

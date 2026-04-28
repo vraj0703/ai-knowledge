@@ -1,0 +1,22 @@
+[capability]
+id          = "theresanaiforthat"
+name        = "There’s An AI For That"
+url         = "https://theresanaiforthat.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "AI Tool Directories"
+description = "AI tool directory — scrapable tool database"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/theresanaiforthat.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false

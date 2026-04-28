@@ -1,0 +1,26 @@
+[capability]
+id          = "pexels"
+name        = "Pexels — Free Stock Photos & Videos"
+url         = "https://www.pexels.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Free stock photo and video API — high quality, no attribution required"
+
+[integration]
+method      = "api"
+api_docs    = "https://www.pexels.com/api/documentation/"
+auth_type   = "api-key"
+auth_env    = "PEXELS_API_KEY"
+adapter     = "adapters/pexels.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T18:48:42.910Z"

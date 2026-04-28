@@ -1,0 +1,26 @@
+[capability]
+id          = "edge-tts"
+name        = "Edge-TTS (via WSL)"
+url         = "https://github.com/rany2/edge-tts"
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Content Creation"
+description = "Free text-to-speech using Microsoft Edge TTS via WSL Kali. Replaces Speechma."
+
+[integration]
+method      = "cli"
+api_docs    = "https://github.com/rany2/edge-tts#readme"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/edge-tts.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["sherpa-content-engine"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

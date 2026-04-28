@@ -1,0 +1,27 @@
+[capability]
+id          = "notify"
+name        = "Unified Notification Hub"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Communication"
+description = "Multi-channel notifications routed by severity. Critical=WhatsApp+Phone+Email, High=WhatsApp+Vibrate, Normal=WhatsApp, Low=Dashboard SSE"
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/notify.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

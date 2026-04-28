@@ -1,0 +1,26 @@
+[capability]
+id          = "shodan"
+name        = "Shodan Search Engine"
+url         = "https://www.shodan.io/"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Internet device search engine — network reconnaissance, security scanning"
+
+[integration]
+method      = "api"
+api_docs    = "https://developer.shodan.io"
+auth_type   = "api-key"
+auth_env    = "SHODAN_API_KEY"
+adapter     = "adapters/shodan.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T18:48:46.576Z"

@@ -1,0 +1,26 @@
+[capability]
+id          = "purgomalum"
+name        = "PurgoMalum — Profanity Filter"
+url         = "https://www.purgomalum.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Content profanity check and filtering, no auth"
+
+[integration]
+method      = "api"
+api_docs    = "https://www.purgomalum.com/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/purgomalum.js"
+
+[consumers]
+ministers   = ["review"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

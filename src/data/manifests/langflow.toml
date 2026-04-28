@@ -1,0 +1,36 @@
+[capability]
+id          = "langflow"
+name        = "Langflow — Visual LLM Workflow Builder"
+url         = "https://www.langflow.org/"
+tier        = "T2-Local"
+status      = "evaluated-candidate"
+free        = true
+category    = "LLM Workflow / Agent Framework"
+description = "Visual low-code builder for LLM agents and RAG pipelines. Each flow deploys as an HTTP API endpoint. First-class Ollama support."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "high"
+fit_for       = ["sherpa-implementation"]
+license       = "MIT"
+github_stars  = 138000
+language      = "Python"
+backend       = "Python (FastAPI under the hood)"
+visual_editor = true
+ollama_native = true
+decision      = "Candidate for sherpa POC. Best fit of all 5 LLM workflow tools evaluated for our specific need (replace dead manifest-only sherpas with LLM-native pipelines)."
+reasoning     = "3 of 4 dead sherpas (crawler, design, scrum) are LLM pipelines not multi-agent collaborations. Langflow is purpose-built for pipelines. 138k stars (highest of any compared tool). Python matches existing sherpa convention. Each flow becomes an HTTP endpoint = same shape as services 3478-3485. Does NOT collide with cortex (cortex is orchestrator, langflow flows are tools cortex CALLS)."
+compared_to   = ["n8n", "node-red", "activepieces", "crewai", "ilograph"]
+revisit_when  = "after crawler-sherpa POC succeeds or fails"
+poc_plan      = "Build crawler sherpa as a Langflow flow: search → Ollama dedupe → write to memory/knowledge/manifests/. Wire as service entry in mind/cortex/config.toml. ~2-3 hours."
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

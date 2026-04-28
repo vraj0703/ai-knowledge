@@ -1,0 +1,27 @@
+[capability]
+id          = "puppeteer"
+name        = "Puppeteer Browser Automation"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Web Automation"
+description = "Headless Chromium — screenshots, JS-rendered page fetch, click, fill forms, evaluate JS, generate PDFs"
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/puppeteer.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = ["sherpa-security"]
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

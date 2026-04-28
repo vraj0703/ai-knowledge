@@ -1,0 +1,26 @@
+[capability]
+id          = "coingecko"
+name        = "CoinGecko — Cryptocurrency Data"
+url         = "https://www.coingecko.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Crypto prices, trending coins, market data, no auth"
+
+[integration]
+method      = "api"
+api_docs    = "https://www.coingecko.com/en/api/documentation"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/coingecko.js"
+
+[consumers]
+ministers   = ["resources"]
+sherpas    = []
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:36.908Z"

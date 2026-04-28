@@ -1,0 +1,22 @@
+[capability]
+id          = "materialdesignicons"
+name        = "MaterialDesignIcons.com"
+url         = "https://materialdesignicons.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Material Design icon names and codes — fetchable icon data"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/materialdesignicons.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

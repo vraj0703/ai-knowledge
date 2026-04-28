@@ -1,0 +1,35 @@
+[capability]
+id          = "node-red"
+name        = "Node-RED — Low-code event-driven flow editor"
+url         = "https://nodered.org/"
+tier        = "T2-Local"
+status      = "parked"
+free        = true
+category    = "Workflow Automation / IoT"
+description = "Visual flow editor for event-driven applications. 5,000+ community nodes. Built for IoT and edge devices (born at IBM for Raspberry Pi). HTTP, MQTT, GPIO, modbus, serial, function nodes."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "low-for-current-needs"
+license       = "Apache 2.0 (cleanest of any tool evaluated)"
+github_stars  = 23000
+language      = "JavaScript / Node.js"
+backend       = "Node.js + filesystem JSON"
+visual_editor = true
+ollama_native = false
+decision      = "Park. Wrong tool for current LLM-orchestration needs. RIGHT tool for a future hardware-sensor expansion of the senses organ."
+reasoning     = "Node-RED is the canonical IoT flow editor. Its sweet spot is sensor data plumbing on Pi/edge devices: GPIO, MQTT, modbus, real-time event streams. 5,000+ community nodes are mostly hardware/protocol nodes, NOT LLM nodes. We currently have stub directories for senses/proprioception/pi/, senses/vision/captures/, senses/thermoception/ but no actual hardware integration. Node-RED becomes the right tool the day those stubs become real sensor flows. Apache 2.0 is the cleanest license of any tool evaluated."
+compared_to   = ["langflow", "n8n", "activepieces", "crewai"]
+revisit_when  = "we actually build hardware sensor flows on the Pi (GPIO, MQTT, real-time event streams, phone telemetry)"
+not_for       = "LLM orchestration"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

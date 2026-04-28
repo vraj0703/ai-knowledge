@@ -1,0 +1,35 @@
+[capability]
+id          = "activepieces"
+name        = "Activepieces — AI-First Workflow Automation"
+url         = "https://www.activepieces.com/"
+tier        = "T2-Local"
+status      = "parked"
+free        = true
+category    = "Workflow Automation"
+description = "Self-hosted visual workflow tool positioned as an n8n alternative with stronger AI focus. ~200 pieces (60% community). 280+ pieces also exposed as MCP servers."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "medium-niche"
+license       = "MIT (community edition)"
+github_stars  = 21600
+language      = "TypeScript / Node.js"
+backend       = "TypeScript monorepo (Turbo, Bun)"
+visual_editor = true
+ollama_native = "supported"
+decision      = "Park. One genuinely interesting feature (MCP server support) but no current use case strong enough to justify a 9th surface."
+reasoning     = "The novel angle: Activepieces can expose 280+ of its pieces as MCP servers. Cortex already has an MCP bridge (mind/cortex/mcp-bridge.js), so Activepieces workflows could become tools Mr. V calls directly via MCP — without any custom gateway code. BUT we currently have 23 gateways + 71 well-curated knowledge capabilities. The gap is quality, not quantity. Adding 280 pre-made tools doesn't solve a real problem we have right now. MIT license is clean, 21.6k stars is moderate."
+compared_to   = ["langflow", "n8n", "node-red", "crewai"]
+revisit_when  = "we feel the gateway/knowledge capability layer is too thin and want bulk pre-built tools via MCP"
+not_for       = "Anything currently covered by gateways or knowledge adapters"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

@@ -1,0 +1,22 @@
+[capability]
+id          = "lummi"
+name        = "Lummi — Free AI Stock Images & 3D"
+url         = "https://www.lummi.ai/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = true
+category    = "AI Tools"
+description = "AI-generated stock images + 3D — free API"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "api-key"
+auth_env    = "LUMMI_API_KEY"
+adapter     = "adapters/lummi.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

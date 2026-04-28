@@ -1,0 +1,22 @@
+[capability]
+id          = "unicode-table"
+name        = "Unicode Character Table"
+url         = "https://unicode-table.com/en/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "APIs and Web Services"
+description = "Unicode character lookup — fetchable character data"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/unicode-table.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false

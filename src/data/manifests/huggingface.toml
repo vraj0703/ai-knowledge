@@ -1,0 +1,26 @@
+[capability]
+id          = "huggingface"
+name        = "Qwen Image Edit Camera Control - a Hugging Face Space by linoyts"
+url         = "https://huggingface.co/spaces/linoyts/Qwen-Image-Edit-Angles"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "AI Tools"
+description = "HuggingFace — model API, spaces, inference endpoints"
+
+[integration]
+method      = "api"
+api_docs    = "https://huggingface.co/docs/api-inference"
+auth_type   = "api-key"
+auth_env    = "HUGGINGFACE_API_KEY"
+adapter     = "adapters/huggingface.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:57:48.855Z"

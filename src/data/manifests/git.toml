@@ -1,0 +1,27 @@
+[capability]
+id          = "git-gateway"
+name        = "Git Operations Gateway"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Development"
+description = "Structured git commands — status, diff, log, commit, branch, stash. JSON output. Cortex auto-commits."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/git.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

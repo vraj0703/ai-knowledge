@@ -1,0 +1,22 @@
+[capability]
+id          = "open-ui"
+name        = "Design Systems | Open UI"
+url         = "https://open-ui.org/design-systems/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "UI Components"
+description = "Design systems reference — scrapable component specs"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/open-ui.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

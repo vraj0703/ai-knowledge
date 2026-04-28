@@ -1,0 +1,22 @@
+[capability]
+id          = "futuretools"
+name        = "FutureTools.io - AI tool directory"
+url         = "https://www.futuretools.io/?tags-n5zn=for-fun"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "AI Tool Directories"
+description = "AI tool directory — scrapable tool listings"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/futuretools.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false

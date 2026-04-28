@@ -9,6 +9,7 @@ dist/
 *.db
 *.db-journal
 data/data_sources/local/*.db
-data/manifests/
-src/data/manifests/
+# src/data/manifests/ is bundled with the package since v0.1.1.
+# Consumers wanting their own manifests should use a separate dir
+# and pass it via KNOWLEDGE_MANIFESTS_DIR or the manifestsDir arg.
 config/secrets/

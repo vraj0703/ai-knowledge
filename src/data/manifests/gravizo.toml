@@ -1,0 +1,26 @@
+[capability]
+id          = "gravizo"
+name        = "Gravizo - UMLGraph/PlantUML diagrams"
+url         = "http://gravizo.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "APIs and Web Services"
+description = "UML/PlantUML diagram renderer — pass text, get SVG image URL"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/gravizo.js"
+
+[consumers]
+ministers   = ["planning"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:34:47.266Z"

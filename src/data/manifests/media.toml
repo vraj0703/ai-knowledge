@@ -1,0 +1,27 @@
+[capability]
+id          = "media-gateway"
+name        = "Media Pipeline Gateway"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Content Creation"
+description = "ffmpeg + imagemagick + Edge-TTS via Kali WSL. TTS, transcode, thumbnail, compress, media info."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/media.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

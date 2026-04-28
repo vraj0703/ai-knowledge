@@ -1,0 +1,26 @@
+[capability]
+id          = "fonts-google"
+name        = "Google Fonts"
+url         = "https://fonts.google.com/"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Design and Assets"
+description = "Google Fonts API — 1500+ fonts, CSS/download"
+
+[integration]
+method      = "api"
+api_docs    = "https://developers.google.com/fonts"
+auth_type   = "api-key"
+auth_env    = "GOOGLE_FONTS_API_KEY"
+adapter     = "adapters/fonts-google.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["design"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 2
+last_used  = "2026-03-23T17:55:29.524Z"

@@ -1,0 +1,22 @@
+[capability]
+id          = "classcentral"
+name        = "Class Central - course search"
+url         = "https://www.classcentral.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Learning Platforms"
+description = "Course search engine — scrapable course data"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/classcentral.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false

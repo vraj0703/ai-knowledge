@@ -1,0 +1,28 @@
+[capability]
+id          = "design-typography"
+name        = "Design Reference: Typography Pairings"
+url         = "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+tier        = "T6-Reference"
+status      = "enabled"
+free        = true
+category    = "Design System"
+description = "73 curated font pairings with Google Fonts URLs, CSS imports, Tailwind configs, and mood/use-case metadata. 13 pairings marked as recommended for dark monitoring dashboards. Includes mono, sans, serif, display, and script categories."
+
+[integration]
+method      = "local-file"
+file_path   = "design-system/tokens/typography.toml"
+format      = "toml"
+adapter     = ""
+
+[consumers]
+ministers   = ["minister-design"]
+sherpas     = ["sherpa-design"]
+mr_v        = true
+pm          = false
+
+[usage]
+use_count   = 0
+last_used   = ""
+absorbed    = "2026-03-30"
+source      = "github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+record_count = 73

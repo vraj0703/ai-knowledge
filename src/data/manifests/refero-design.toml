@@ -1,0 +1,22 @@
+[capability]
+id          = "refero-design"
+name        = "Refero — UI/UX Design Inspiration"
+url         = "https://refero.design/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "UI/UX design inspiration — scrapable design patterns"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/refero-design.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

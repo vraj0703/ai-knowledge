@@ -1,0 +1,22 @@
+[capability]
+id          = "vidiq"
+name        = "vidIQ: Get More Subscribers & Views on YouTube | YouTube Tools"
+url         = "https://vidiq.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Content Creation"
+description = "YouTube analytics — channel/video performance data"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/vidiq.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

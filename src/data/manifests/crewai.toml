@@ -1,0 +1,36 @@
+[capability]
+id          = "crewai"
+name        = "CrewAI — Multi-Agent Orchestration Framework"
+url         = "https://www.crewai.com/"
+tier        = "T2-Local"
+status      = "evaluated-candidate-future"
+free        = true
+category    = "LLM Workflow / Agent Framework"
+description = "Code-first Python framework for multi-agent collaboration. Each agent has a role, goal, backstory, and tools. Agents form 'crews' that work together on tasks. Independent of LangChain."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "medium"
+fit_for       = ["future-multi-agent-experiments", "minister-emulation-research", "PROTOCOL-00-as-crew"]
+license       = "MIT"
+github_stars  = 48400
+language      = "Python"
+backend       = "Pure Python, independent (NOT built on LangChain)"
+visual_editor = "CrewAI Studio (newer, code-first historically)"
+ollama_native = "supported via LiteLLM"
+decision      = "Park as research candidate for FUTURE multi-agent experiments. Not for immediate sherpa work."
+reasoning     = "CrewAI's killer feature is multi-agent collaboration with roles + goals + backstories. This maps EXACTLY onto our minister concept (Planning, Review, Resources, External Affairs, Design). But current ministers are Mr. V's prompt-time specializations (Claude skills), not autonomous local-LLM agents. CrewAI would EMULATE them, not replace them. Useful for research: 'what would autonomous local-LLM ministers look like?' or 'what if PROTOCOL-00 was a 6-agent crew?'. Independence from LangChain is a real plus given LangChain's API churn. 48.4k stars, MIT, well-maintained."
+compared_to   = ["langflow", "n8n", "node-red", "activepieces"]
+revisit_when  = "we want to experiment with autonomous local-LLM minister emulation, OR want to model PROTOCOL-00 as a multi-agent crew"
+not_for       = "Sherpa implementation — sherpas are pipelines, not crews. Use Langflow for that."
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = false
+pm            = false
+
+[usage]
+use_count     = 0
+last_used     = ""

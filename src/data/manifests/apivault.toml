@@ -1,0 +1,26 @@
+[capability]
+id          = "apivault"
+name        = "Apivault - Public APIs"
+url         = "https://apivault.dev/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Directory of 1000+ public APIs — meta-tool for discovering new capabilities"
+
+[integration]
+method      = "fetch"
+api_docs    = "https://apivault.dev"
+auth_type   = "api-key"
+auth_env    = "APIVAULT_API_KEY"
+adapter     = "adapters/apivault.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-24T07:45:51.987Z"

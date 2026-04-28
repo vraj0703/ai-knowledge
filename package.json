@@ -1,6 +1,6 @@
 {
   "name": "@vraj0703/ai-knowledge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Capability registry for AI agents — neural graph, Hebbian strengthening, LSD discovery, manifest-driven adapter runner. Mockable defaults so it runs without SQLite, Ollama, or Langflow.",
   "license": "MIT",
   "author": "Vishal Raj",
@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "start": "node src/index.js",
-    "test": "node --test tests/ src/domain/use_cases/*.test.js"
+    "test": "node --test src/domain/use_cases/*.test.js"
   },
   "dependencies": {
     "express": "^5.1.0",

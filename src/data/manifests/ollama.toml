@@ -1,0 +1,26 @@
+[capability]
+id          = "ollama"
+name        = "Ollama - Qwen Model Search"
+url         = "https://ollama.com/search?q=qwen"
+tier        = "T1-API"
+status      = "enabled"
+free        = false
+category    = "MCP and Agent Infra"
+description = "Ollama model registry — already integrated in Raj Sadan"
+
+[integration]
+method      = "api"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/ollama.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:27:44.011Z"

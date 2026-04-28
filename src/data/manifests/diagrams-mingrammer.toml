@@ -1,0 +1,39 @@
+[capability]
+id          = "diagrams-mingrammer"
+name        = "diagrams (mingrammer) — Architecture diagrams as code"
+url         = "https://diagrams.mingrammer.com/"
+tier        = "T0-System"
+status      = "enabled"
+free        = true
+category    = "Diagram Rendering"
+description = "Python library for creating architecture diagrams as code. Wraps Graphviz with a clean syntax + huge pre-built icon library (AWS, GCP, Azure, Kubernetes, On-Premises, Programming frameworks). Supports custom nodes via SVG/PNG."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "high"
+fit_for       = ["architecture-rendering"]
+license       = "MIT"
+github_stars  = 42200
+latest_release = "v0.25.1 (November 22, 2025)"
+language      = "Python"
+pip_install   = "pip install diagrams (installed 2026-04-09, version 0.25.1)"
+decision      = "Adopted. Powers tools/architecture/render.py — generates 3 perspectives (service-mesh, neural-organs, constitutional)."
+reasoning     = "Chosen over Ilograph for: MIT license, no vendor lock-in, Python-native (each perspective is just a function reading source-of-truth files). Generates SVG output viewable directly. Matures fast — v0.25.1 shipped Nov 2025."
+compared_to   = ["ilograph", "graphviz-direct"]
+
+[integration]
+method        = "python-library"
+called_from   = "tools/architecture/render.py"
+depends_on    = ["graphviz"]
+adapter       = "tools/architecture/render.py"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = true
+pm            = true
+
+[usage]
+use_count     = 1
+last_used     = "2026-04-09T15:30:00+05:30"

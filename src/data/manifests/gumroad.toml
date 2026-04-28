@@ -1,0 +1,26 @@
+[capability]
+id          = "gumroad"
+name        = "Gumroad — Digital Products Marketplace"
+url         = "https://gumroad.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Digital products selling API — create products, manage sales, check analytics"
+
+[integration]
+method      = "api"
+api_docs    = "https://app.gumroad.com/api"
+auth_type   = "api-key"
+auth_env    = "GUMROAD_ACCESS_TOKEN"
+adapter     = "adapters/gumroad.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 0
+last_used  = ""

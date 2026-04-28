@@ -1,0 +1,22 @@
+[capability]
+id          = "zapsplat"
+name        = "Sticky tape peel from roll, short pull 3 Sound Effect - Download FREE - ZapSplat"
+url         = "https://www.zapsplat.com/music/sticky-tape-peel-from-roll-short-pull-3/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = true
+category    = "Content Creation"
+description = "Sound effects library — downloadable audio for video pipeline"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "api-key"
+auth_env    = "ZAPSPLAT_API_KEY"
+adapter     = "adapters/zapsplat.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

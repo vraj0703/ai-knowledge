@@ -1,0 +1,27 @@
+[capability]
+id          = "netdiag"
+name        = "Network Diagnostics"
+url         = ""
+tier        = "T4-CLI"
+status      = "enabled"
+free        = true
+category    = "Infrastructure"
+description = "Network troubleshooting via Kali — ping, traceroute, DNS resolve, port check, bandwidth test, mesh status (PC+Pi+Phone), packet capture."
+
+[integration]
+method      = "cli"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = ""
+gateway     = "gateway/netdiag.cjs"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 0
+last_used  = ""

@@ -1,0 +1,26 @@
+[capability]
+id          = "newsapi"
+name        = "NewsAPI — World News Headlines"
+url         = "https://newsapi.org"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "80,000+ news sources, headlines by country/category, search articles"
+
+[integration]
+method      = "api"
+api_docs    = "https://newsapi.org/docs"
+auth_type   = "api-key"
+auth_env    = "NEWSAPI_KEY"
+adapter     = "adapters/newsapi.js"
+
+[consumers]
+ministers   = ["planning"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 2
+last_used  = "2026-03-23T20:03:36.735Z"

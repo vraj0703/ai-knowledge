@@ -186,7 +186,7 @@ describe("FileCredentialStore", () => {
 
   before(() => {
     const { FileCredentialStore } = require("../../data/repositories/file_credential_store");
-    const credPath = path.resolve(__dirname, "..", "..", "..", "config", "secrets", "knowledge.credentials.toml");
+    const credPath = path.resolve(__dirname, "..", "..", "..", "tests", "fixtures", "credentials.toml");
     store = new FileCredentialStore({ credentialsPath: credPath });
   });
 

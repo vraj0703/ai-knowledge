@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-04-29
+
+### Fixed
+
+- **Bundled 79 capability manifests** at `src/data/manifests/` — the package previously assumed consumers would supply their own manifests dir, which left `TOMLManifestStore` tests (loadAll, getById, search, getByCategory, getForConsumer, stats) failing on a fresh clone. Manifests are generic external services (Exa, Gemini, Cloudflare, Hugging Face, Open-Meteo, etc.) — none raj-sadan-private. Consumers can still override with `KNOWLEDGE_MANIFESTS_DIR` or by passing `manifestsDir` to `TOMLManifestStore`.
+- **Fixed `FileCredentialStore` test** — pointed at a placeholder `tests/fixtures/credentials.toml` (committed, no real secrets) instead of a non-existent `config/secrets/knowledge.credentials.toml`. The runtime contract is unchanged: consumers point `FileCredentialStore` at their own gitignored credentials file.
+- **Test suite now 65/65 green** on a clean `npm install` (was 58/65).
+- **`npm test` script** narrowed from `tests/ src/domain/use_cases/*.test.js` (which failed in Node 24+ on directory args) to `src/domain/use_cases/*.test.js`.
+
 ## [0.1.0] — 2026-04-28
 
 First public release. Lifted from raj-sadan's v2 knowledge organ.

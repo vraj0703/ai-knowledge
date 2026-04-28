@@ -1,0 +1,26 @@
+[capability]
+id          = "uigradients"
+name        = "uiGradients - Color Gradients"
+url         = "https://uigradients.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "CSS gradient collection — fetchable gradient definitions"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/uigradients.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["design"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-24T07:45:50.050Z"

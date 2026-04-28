@@ -1,0 +1,26 @@
+[capability]
+id          = "exa"
+name        = "Exa | Web Search API, AI Search Engine, & Website Crawler"
+url         = "https://exa.ai/"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Web search API — semantic search, find content, crawl pages"
+
+[integration]
+method      = "api"
+api_docs    = "https://docs.exa.ai"
+auth_type   = "api-key"
+auth_env    = "EXA_API_KEY"
+adapter     = "adapters/exa.js"
+
+[consumers]
+ministers   = ["planning", "external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 2
+last_used  = "2026-03-23T18:15:18.826Z"

@@ -1,0 +1,28 @@
+[capability]
+id          = "design-colors"
+name        = "Design Reference: Color Palettes"
+url         = "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+tier        = "T6-Reference"
+status      = "enabled"
+free        = true
+category    = "Design System"
+description = "161 WCAG-validated color palettes organized by 24 product categories. Includes primary, secondary, accent, background, foreground, card, muted, border, and destructive color pairs. Dark theme analysis maps Raj Sadan's current palette to closest references."
+
+[integration]
+method      = "local-file"
+file_path   = "design-system/tokens/colors.toml"
+format      = "toml"
+adapter     = ""
+
+[consumers]
+ministers   = ["minister-design"]
+sherpas     = ["sherpa-design"]
+mr_v        = true
+pm          = false
+
+[usage]
+use_count   = 0
+last_used   = ""
+absorbed    = "2026-03-30"
+source      = "github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+record_count = 161

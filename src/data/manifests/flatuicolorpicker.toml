@@ -1,0 +1,22 @@
+[capability]
+id          = "flatuicolorpicker"
+name        = "Flat UI Color Picker"
+url         = "http://www.flatuicolorpicker.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Flat UI colors — fetchable hex values"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/flatuicolorpicker.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

@@ -1,0 +1,26 @@
+[capability]
+id          = "ipify"
+name        = "IPify — Public IP Address"
+url         = "https://api.ipify.org"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Web Utilities"
+description = "Get your public IP address, no auth required"
+
+[integration]
+method      = "api"
+api_docs    = "https://www.ipify.org/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/ipify.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:38.708Z"

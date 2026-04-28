@@ -1,0 +1,22 @@
+[capability]
+id          = "short-io"
+name        = "Short.io — Branded URL Shortener"
+url         = "https://short.io"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Web Utilities"
+description = "Branded short links with click analytics, 1000 links free"
+
+[integration]
+method      = "api"
+api_docs    = "https://developers.short.io/reference"
+auth_type   = "api-key"
+auth_env    = "SHORT_IO_API_KEY"
+adapter     = "adapters/short-io.js"
+
+[consumers]
+ministers   = ["external-affairs"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = false

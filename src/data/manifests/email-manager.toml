@@ -1,0 +1,34 @@
+[capability]
+id          = "email-manager"
+name        = "Email Manager (Cloudflare + Resend)"
+url         = "https://developers.cloudflare.com/email-routing/"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Communication"
+description = "Create unlimited *@vishalraj.space email aliases on demand via Cloudflare Email Routing. Send emails via Resend SMTP. 9 active aliases: temp, lucknow, ai-news, mythology, finance, tech, adsense, gumroad, amazon."
+
+[integration]
+method      = "api"
+api_docs    = "https://developers.cloudflare.com/api/operations/email-routing-routing-rules-list-routing-rules"
+auth_type   = "bearer"
+auth_env    = "cloudflare_email"
+adapter     = "adapters/email-manager.js"
+
+[actions]
+create      = "Create a new email alias: { action: 'create', alias: 'name', purpose: 'description' }"
+list        = "List all aliases: { action: 'list' }"
+delete      = "Delete an alias: { action: 'delete', alias: 'name' }"
+send        = "Send email: { action: 'send', from: 'alias', to: 'email', subject: '...', body: '...' }"
+dns_check   = "Check DNS records: { action: 'dns-check' }"
+setup       = "Verify configuration: { action: 'setup' }"
+
+[consumers]
+ministers   = ["minister-external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 0
+last_used  = ""

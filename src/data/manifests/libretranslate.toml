@@ -1,0 +1,26 @@
+[capability]
+id          = "libretranslate"
+name        = "MyMemory Translation"
+url         = "https://mymemory.translated.net"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Web Utilities"
+description = "Free machine translation via MyMemory API, 1000 words/day, no auth needed. Replaces DeepL."
+
+[integration]
+method      = "api"
+api_docs    = "https://libretranslate.com/docs/"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/libretranslate.js"
+
+[consumers]
+ministers   = ["minister-external-affairs"]
+sherpas    = []
+mr_v       = true
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-26T16:23:37.257Z"

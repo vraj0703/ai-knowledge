@@ -1,0 +1,22 @@
+[capability]
+id          = "pictogram2"
+name        = "Human Pictogram 2.0 - free vector human pictograms -"
+url         = "https://pictogram2.com/?lang=en"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Free vector human pictograms — downloadable SVGs"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/pictogram2.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

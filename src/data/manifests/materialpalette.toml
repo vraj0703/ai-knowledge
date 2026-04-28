@@ -1,0 +1,22 @@
+[capability]
+id          = "materialpalette"
+name        = "Material Design Color Palette Generator"
+url         = "http://www.materialpalette.com/green/pink"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Material Design color palettes — scrapable color values"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/materialpalette.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["design"]
+mr_v       = false
+pm         = false

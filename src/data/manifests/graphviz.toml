@@ -1,0 +1,37 @@
+[capability]
+id          = "graphviz"
+name        = "Graphviz — Graph Visualization Software"
+url         = "https://graphviz.org/"
+tier        = "T0-System"
+status      = "enabled"
+free        = true
+category    = "Diagram Rendering"
+description = "Open-source graph visualization toolkit. Reads .dot text files, renders to SVG/PNG/PDF/40+ formats. 30+ years old, ubiquitous. Multiple layout engines (dot, neato, fdp, sfdp, circo, twopi)."
+
+[evaluation]
+evaluated_on  = "2026-04-09"
+evaluator     = "Mr. V"
+fit_score     = "high"
+fit_for       = ["architecture-rendering"]
+license       = "EPL-1.0 (Eclipse Public License)"
+github_stars  = "ubiquitous"
+language      = "C"
+binary_install = "winget install Graphviz.Graphviz (installed 2026-04-09, version 14.1.4)"
+decision      = "Adopted as the rendering engine for tools/architecture/render.py. Used via the Python `diagrams` library (mingrammer)."
+reasoning     = "Cleanest open-source diagram renderer. Used under the hood by mingrammer's diagrams library. SVG output is git-friendly (text-based, diffable). Multiple layout engines give flexibility. Zero vendor lock-in."
+
+[integration]
+method        = "binary"
+binary_path   = "C:\\Program Files\\Graphviz\\bin\\dot.exe"
+called_from   = "tools/architecture/render.py (via Python diagrams library which subprocess-calls dot)"
+adapter       = "tools/architecture/render.py"
+
+[consumers]
+ministers     = []
+sherpas       = []
+mr_v          = true
+pm            = true
+
+[usage]
+use_count     = 1
+last_used     = "2026-04-09T15:30:00+05:30"

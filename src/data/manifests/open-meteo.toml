@@ -1,0 +1,26 @@
+[capability]
+id          = "open-meteo"
+name        = "Open-Meteo — Free Weather API"
+url         = "https://open-meteo.com"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Weather forecasts, hourly/daily, 7-day, no auth required"
+
+[integration]
+method      = "api"
+api_docs    = "https://open-meteo.com/en/docs"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/open-meteo.js"
+
+[consumers]
+ministers   = ["planning"]
+sherpas    = ["content-engine"]
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-24T07:45:53.014Z"

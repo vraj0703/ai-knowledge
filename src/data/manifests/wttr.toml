@@ -1,0 +1,26 @@
+[capability]
+id          = "wttr"
+name        = "wttr.in — Terminal Weather"
+url         = "https://wttr.in"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Weather in JSON/terminal format, no auth required"
+
+[integration]
+method      = "api"
+api_docs    = "https://wttr.in/:help"
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/wttr.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = true
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T19:51:26.645Z"

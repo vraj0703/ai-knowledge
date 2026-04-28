@@ -1,0 +1,22 @@
+[capability]
+id          = "solarsystemscope"
+name        = "Solar Textures - Solar System Scope"
+url         = "https://www.solarsystemscope.com/textures/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Solar system textures — downloadable texture files"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/solarsystemscope.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

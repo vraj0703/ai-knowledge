@@ -1,0 +1,26 @@
+[capability]
+id          = "freepik"
+name        = "Free Icons - Freepik"
+url         = "http://www.freepik.com/free-icons"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "Design and Assets"
+description = "Stock vector/photo API — free tier"
+
+[integration]
+method      = "api"
+api_docs    = ""
+auth_type   = "api-key"
+auth_env    = "FREEPIK_API_KEY"
+adapter     = "adapters/freepik.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T18:48:45.441Z"

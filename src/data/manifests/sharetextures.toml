@@ -1,0 +1,22 @@
+[capability]
+id          = "sharetextures"
+name        = "Share Textures - Free CC0 Textures"
+url         = "https://www.sharetextures.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "Design and Assets"
+description = "Free CC0 textures — downloadable for video/3D"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/sharetextures.js"
+
+[consumers]
+ministers   = []
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false

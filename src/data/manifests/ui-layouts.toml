@@ -1,0 +1,22 @@
+[capability]
+id          = "ui-layouts"
+name        = "Ui-Layouts | Your Frontend Universe"
+url         = "https://www.ui-layouts.com/"
+tier        = "T2-FETCH"
+status      = "enabled"
+free        = false
+category    = "UI Components"
+description = "Frontend UI layouts — fetchable component code"
+
+[integration]
+method      = "fetch"
+api_docs    = ""
+auth_type   = "none"
+auth_env    = ""
+adapter     = "adapters/ui-layouts.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = []
+mr_v       = false
+pm         = false

@@ -1,0 +1,22 @@
+[capability]
+id          = "grok"
+name        = "Grok"
+url         = "https://grok.com/?utm_source=sp_auto_dm&utm_referrer=sp_auto_dm"
+tier        = "T1-API"
+status      = "needs-credits"
+free        = true
+category    = "AI Tools"
+description = "Grok LLM — xAI API access"
+
+[integration]
+method      = "api"
+api_docs    = "https://docs.x.ai"
+auth_type   = "api-key"
+auth_env    = "GROK_API_KEY"
+adapter     = "adapters/grok.js"
+
+[consumers]
+ministers   = []
+sherpas    = []
+mr_v       = true
+pm         = false

@@ -1,0 +1,26 @@
+[capability]
+id          = "tinypng"
+name        = "TinyPNG - Compress PNG images"
+url         = "https://tinypng.com/"
+tier        = "T1-API"
+status      = "enabled"
+free        = true
+category    = "APIs and Web Services"
+description = "Image compression API — PNG/JPEG optimization, up to 500 free/month"
+
+[integration]
+method      = "api"
+api_docs    = "https://tinypng.com/developers"
+auth_type   = "api-key"
+auth_env    = "TINYPNG_API_KEY"
+adapter     = "adapters/tinypng.js"
+
+[consumers]
+ministers   = ["design"]
+sherpas    = ["content-engine"]
+mr_v       = false
+pm         = false
+
+[usage]
+use_count  = 1
+last_used  = "2026-03-23T17:40:58.588Z"
