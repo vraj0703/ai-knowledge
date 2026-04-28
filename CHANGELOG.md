@@ -1,0 +1,29 @@
+# Changelog
+
+## [Unreleased]
+
+## [0.1.0] — 2026-04-28
+
+First public release. Lifted from raj-sadan's v2 knowledge organ.
+
+### Added
+
+- **Clean architecture lift** — domain (5 interfaces, use cases, entities, exceptions, constants), data (sources, repositories, mocks, adapters, migrations), di, navigation, presentation. 91 JS files.
+- **Mock-default DI container** — every external integration ships with a stub:
+  - `InMemoryGraphStore` (Map-backed nodes + edges; reinforce, neighbors)
+  - `InMemoryManifestStore` (seeded with 5 generic capabilities — file-read, http-fetch, ollama-chat, shell-exec, json-extract)
+  - `StubCredentialStore` (never returns real secrets)
+  - `StubAdapterRunner` (records would-be invocations)
+  - `StubLSDProvider` (deterministic shared-category suggestions, no LLM)
+- **`KNOWLEDGE_USE_REAL` swap** — five keys: `graph`, `manifests`, `credentials`, `adapters`, `lsd`.
+- **Constants with env-var fallback** — `KNOWLEDGE_*` env vars override every default.
+- **CLI dispatcher** at `bin/ai-knowledge` — `serve`, `mcp`, `search`, `lookup`, `register`.
+- **MCP server** with 4 tools: `knowledge_search`, `knowledge_lookup`, `knowledge_register`, `knowledge_use` (Hebbian reinforce on co-usage).
+- **CI matrix** on Node 18 / 20 / 22.
+- **11 smoke tests** including an e2e register + search + reinforce round-trip.
+
+### Known limitations
+
+- Seed manifests are 5 placeholders; raj-sadan's 71 stay raj-sadan-side via `KNOWLEDGE_MANIFESTS_DIR`.
+- Search is text matching, not vector similarity. Adding an embedder (could share `ai-memory`'s) is a v0.2 follow-up.
+- Live integration tests left to the consumer; only mocks exercised here.

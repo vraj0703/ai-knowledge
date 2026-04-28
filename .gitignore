@@ -1,0 +1,14 @@
+node_modules/
+*.log
+.DS_Store
+.idea/
+.vscode/
+coverage/
+dist/
+.npmrc
+*.db
+*.db-journal
+data/data_sources/local/*.db
+data/manifests/
+src/data/manifests/
+config/secrets/
