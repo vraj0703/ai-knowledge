@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-04-29
+
+### Changed (BREAKING — npm scope)
+
+- **Renamed npm package from `@vraj0703/ai-knowledge` to `@raj-sadan/ai-knowledge`** to match the project's npm org. Update install: `npm install @raj-sadan/ai-knowledge`.
+- `release.yml` added — tag-triggered npm publish with provenance attestation.
+- `publishConfig` added: `access: public`, `provenance: true`.
+
+### Note
+
+v0.1.0 and v0.1.1 existed only as Git tags (never published to npm). v0.1.2 is the first npm publish.
+
 ## [0.1.1] — 2026-04-29
 
 ### Fixed

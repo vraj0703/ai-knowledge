@@ -1,6 +1,10 @@
 {
-  "name": "@vraj0703/ai-knowledge",
-  "version": "0.1.1",
+  "name": "@raj-sadan/ai-knowledge",
+  "version": "0.1.2",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "description": "Capability registry for AI agents — neural graph, Hebbian strengthening, LSD discovery, manifest-driven adapter runner. Mockable defaults so it runs without SQLite, Ollama, or Langflow.",
   "license": "MIT",
   "author": "Vishal Raj",
